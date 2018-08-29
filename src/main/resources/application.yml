@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: Liao315429.
+    url: jdbc:mysql://134.175.190.68:3306/jboa
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 134.175.190.68
+    port: 6379
+    password: 123456
+    timeout: 5000
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 0
+  session:
+    store-type: redis
+#server:
+#  port: 9999
+
