@@ -1,11 +1,11 @@
 spring:
   datasource:
     username: root
-    password: Liao315429.
-    url: jdbc:mysql://134.175.190.68:3306/jboa
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/jboa?autoReconnect=true&failOverReadOnly=false&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
     driver-class-name: com.mysql.jdbc.Driver
   redis:
-    host: 134.175.190.68
+    host: localhost
     port: 6379
     password: 123456
     timeout: 5000
@@ -19,4 +19,6 @@ spring:
     store-type: redis
 #server:
 #  port: 9999
-
+logging:
+    #file: /home/sang/workspace/log.log
+    level.org.springframework.web: DEBUG
